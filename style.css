@@ -1,0 +1,378 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+background-color: #1A1B2F;
+
+padding: 0;
+scroll-behavior: smooth;
+color: white;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+   /* start header */
+
+  .header{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    height: 70px;
+  }
+  .header .part1{
+    display: flex;
+    align-items: center;
+  }
+  .header .part1 .logo{
+    width: 40px;
+    padding: 0 10px;
+  }
+
+  .header .title h2{
+    padding-left: 10px;
+  }
+
+
+/* phone mode */
+.lighting_mode_phone{
+  text-align: center;
+  z-index: 1;
+}
+.lighting_mode_phone ul{
+
+ display: flex;
+    padding: 5px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.59);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+}
+.lighting_mode_phone ul:hover{
+
+     box-shadow: 0 0px 1px 0 rgb(0 0 0 / 16%), 0 0px 2px 0 rgb(0 0 0 / 12%);
+ 
+ }
+.lighting_mode_phone ul li .light_mode_image {
+  width: 30px;
+}
+.lighting_mode_phone ul li .arrow-button {
+  width: 15px;
+  position: relative;
+  bottom: -5px;
+  padding: 1px;
+}
+
+.links{
+  display: none;
+}
+
+.links ul{
+  position: absolute;
+  top: 80px;
+  right: 14px;
+  z-index: 1;
+  background-color: rgba(175, 172, 172, 0.966);
+
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+.links ul::before{
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #9b9c9ce0 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+
+}
+.links ul li{
+ 
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+.links ul li:hover{
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-color: rgb(138, 135, 135);
+
+}
+.links ul li:first-child{
+ border-bottom: 1px black solid;
+}
+.links ul img{
+ width: 30px;
+ padding: 0 5px 0 0;
+
+}
+/* end phone mode */
+
+@media (max-width: 600px) {
+  .lighting_mode{
+    display: none;
+  }
+  .lighting_mode_phone{
+    display: block;
+  }
+}
+ 
+   
+
+
+  /* end header */
+
+  /* start main */
+  .main{
+   text-align: center;
+  }
+  .main .container{
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main .container .chang button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  .main .container .chang button img{ 
+   width: 30px;
+    margin: 10px;
+    
+  }
+  .main .container .chang button img:hover{ 
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  
+     
+   }
+  .main .container .text1{
+    overflow: hidden;
+    width: 50%;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+   
+  }
+
+  
+  .main .container .text1 h3{
+    
+    background-color: #162447;
+    margin: 0;
+    
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    
+  }
+
+  .main .container .text1 textarea{
+    
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #162447;
+    color: ghostwhite;
+    margin: 0;
+  }
+
+  .main .container .text1 #play{
+    margin: 10px 0;
+    padding: 3px 30px;
+    background-color: lawngreen;
+  }
+  .main .container .text2{
+    overflow: hidden;
+    width: 50%;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+   
+  }
+
+  .main .container .text2 h3{
+    
+    background-color: #162447;
+    margin: 0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    
+  }
+
+  .main .container .text2 .output{
+    width: 97%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #162447;
+    color: lawngreen;
+    
+    position: relative;
+  }
+
+
+
+@media (max-width: 530px) {
+  .main .container{
+    width: 90%;
+    display: block;
+  }
+  .main .container .text1{
+   
+    width: 100%;
+    margin: 10px auto;
+   
+  }
+  .main .container .text2{
+   
+    width: 100%;
+    margin: 10px auto;
+   
+  }
+  .main .container .chang button img{ 
+    transform: rotateZ(90deg);
+     
+   }
+}
+
+  /* end main */
+
+  /* start footer */
+  .footer{
+    
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+   
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+   
+    height: 70px;
+    margin: 0;
+    color: white !important;
+  }
+  .footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+  }
+
+  .footer .part2 button{
+    background: none;
+    border: none;
+    display: flex;
+    padding: 8px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.59);
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 2px 0px 0px, rgb(0 0 0 / 12%) 0px 2px 0px 0px;
+  }
+  .footer .part2 button img{
+    width: 20px;
+    padding-left: 5px;
+    
+  } 
+
+  .linksSoc{
+    background: #EEE;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 176%;
+    right: 10px;
+    display: none;
+
+  }
+  .linksSoc ul li{
+    padding: 10px 0;
+  }
+  .linksSoc ul::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color:  #EEE transparent transparent transparent;
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+  
+  }
+  @media (max-width: 525px) {
+    .linksSoc{
+    
+      top: 156%;
+    
+    }
+  }
+  @media (min-width: 530px) {
+    .linksSoc{
+    
+      top: 71%;
+    
+    }
+  }
+  @media (min-width: 602px) {
+    .linksSoc{
+    
+      top: 71.5%;
+    
+    }
+  }
+  @media (min-width: 900px) {
+    .linksSoc{
+    
+      top: 71.5%;
+    
+    }
+  }
+  /* end footer */
+
